@@ -105,13 +105,8 @@ contain ideas for beginner-friendly open source contributions.
 to get started with open source contributions to their project.
 
 
-## Feedback
-- After watching the course, if you have any feedback, I'd love to hear from
-you! Please make an issue on this repository, and I will get back to you. 
-
-
-* PS : 
+## PS : 
  - First add all stuff into "test_mapmaker_start.py" and then create the missing parts(function and arguments) in "mapmaker_start.py" the way for TDD , for each step after
   > docker-compose run test sh
-   use :
-  > # pytest - k map 
+  * use :
+  > (#) pytest - k map 
