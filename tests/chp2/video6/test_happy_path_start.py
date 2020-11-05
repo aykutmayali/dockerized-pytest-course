@@ -34,8 +34,22 @@ def test_csv_reader_data_contents(process_data):
     clear
     """
     data = process_data
-    breakpoint()
+    #breakpoint()
     # Check row types
+    for row in data:
+        #operations
+        assert(isinstance(row['Country'],str))
+        assert(isinstance(row['City'],str))
+        assert(isinstance(row['State_Or_Province'],str))
+        assert(isinstance(row['Lat'],float))
+        assert(isinstance(row['Long'],float))
+        assert(isinstance(row['Altitude'],float))
+
+    assert len(data) ==180
+    assert data[0]['Country'] == 'Andorra'
+    assert data[179]['Country'] == 'United States'
+
+
 
     # Basic data checks
 
