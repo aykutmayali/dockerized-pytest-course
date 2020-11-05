@@ -25,9 +25,16 @@ def test_csv_reader_data_contents(process_data):
     """
     Happy Path Test to examine that each row
     has the appropriate data type per field
+    pytest -k happy
+    type(data)
+    data[0]
+    data[0]['Country']
+    isinstance(data[0]['Country'],str)
+    exit
+    clear
     """
-    # data = process_data
-
+    data = process_data
+    breakpoint()
     # Check row types
 
     # Basic data checks
